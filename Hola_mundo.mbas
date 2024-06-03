@@ -1,0 +1,16 @@
+program Hola_mundo
+
+' Declarations section 
+dim var as byte
+
+main:
+    TRISB =0X00 'DECLARAR EL PUERTO B COMO SALIDA'
+    PORTB =0X00
+    var=50
+    while True
+          PORTB=var
+          Delay_ms(1000)
+          PORTB=0
+          Delay_ms(1000)
+    wend
+end.
